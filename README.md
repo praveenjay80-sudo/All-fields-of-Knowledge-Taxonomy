@@ -1,11 +1,23 @@
-<div align="center">
+# Axiom | Epistemology Matrix
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A high-performance, AI-driven exploration of human knowledge. Powered by Gemini 3.1 Flash Lite.
 
-  <h1>Built with AI Studio</h2>
+## Deployment to Vercel
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+1. **Export code** to GitHub using the AI Studio Export tool.
+2. **Connect Repository** to Vercel.
+3. **Set Environment Variables**:
+   - `GEMINI_API_KEY`: Your Google AI Studio API Key.
+4. **Build Settings**:
+   - Framework: Vite
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+The included `vercel.json` ensures that deep-linking and page refreshes work correctly by routing all requests through the main application logic.
 
-</div>
+## Developing Locally
+
+```bash
+npm install
+npm run dev
+```
